@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-<iframe src="presentation.pdf"></iframe>
+<iframe src="presentation.pdf" width='100%' height='600px' frameborder='0'></iframe>
 
 You can use the [editor on GitHub](https://github.com/cs4641team4summer2020/cs4641team4summer2020.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
