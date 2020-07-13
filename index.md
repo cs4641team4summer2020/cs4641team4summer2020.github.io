@@ -1,19 +1,19 @@
-## CS 4641 Team 4 Summer 2020
+# CS 4641 Team 4 Summer 2020
 
-### Introduction
+## Introduction
 
-#### Background and motivation
+### Background and motivation
 
-#### Dataset
+### Dataset
 
-### Results
+## Results
 
-#### LSTM
+### LSTM
 
-#### HMM
+### HMM
 
-### Conclusion
+## Conclusion
 
-#### Comparison of models
+### Comparison of models
 
-#### Further work
+### Further work
