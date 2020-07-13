@@ -1,4 +1,4 @@
-# CS 4641 Team 4 Summer 2020
+# LSTMs and HMMs to predict lithium-ion battery lifetimes
 
 ## Introduction
 
