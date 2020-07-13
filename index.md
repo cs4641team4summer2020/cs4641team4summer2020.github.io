@@ -86,3 +86,8 @@ will train a LSTM model and a HMM.
 ### Comparison of models
 
 ### Further work
+
+## References
+
+Y. Zhang, R. Xiong, H. He and Z. Liu, "A LSTM-RNN method for the lithuim-ion battery remaining useful life prediction," 2017 Prognostics 
+and System Health Management Conference (PHM-Harbin), Harbin, 2017, pp. 1-4, doi: 10.1109/PHM.2017.8079316.
