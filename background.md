@@ -8,8 +8,6 @@ used in small electronics, including laptop computers, mobile phones,
 and power tools. More recently, as battery technologies have improved,
 they have been employed in electric and hybrid vehicles as well.
 
-$$P(X = x_n)$$
-
 One problem inherent in these batteries is the mechanical strain which
 occurs as lithium ions travel from the cathode to the anode as part of
 normal battery operation. This can result in a buildup of cracks and
@@ -40,7 +38,7 @@ with varying degrees of success. Zhang et al. (2017) employed an LSTM
 model in a similar fashion as the current study and showed that
 recurrent neural network (RNN) methods such as LSTM tend to show
 greater levels of accuracy with battery degredation, which is modeled
-naturally as sets of time-series data.
+naturally as sets of time-series data. We will focus on data-based models.
 
 In this study, we will compare the performance of long short-term
 memory (LSTM) models and hidden Markov models (HMM) as RUL
@@ -58,6 +56,13 @@ states. LSTM models, in contrast, are able to take into account past
 data and use this to make a future prediction. Thus, comparison of
 these two methods will reveal some information about the behavior of
 the processes underlying degredation of lithium-ion batteries.
+
+LSTM is a type of recurrent neural network which relies on specialized
+LSTM neurons.
+
+{% include image.html
+url="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/The_LSTM_cell.png/800px-The_LSTM_cell.png"
+description="Source: Wikipedia, Long short-term memory" %}
 
 For this study we use a dataset whose testbed comprises several 18650
 sized rechargeable lithium-ion batteries who were run through charge,
