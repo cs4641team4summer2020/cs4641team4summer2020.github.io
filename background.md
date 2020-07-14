@@ -45,17 +45,7 @@ memory (LSTM) models and hidden Markov models (HMM) as RUL
 predictors. Both models have been applied successfully to
 time-dependent data in the past. Zhang et al. describe how LSTM is
 applied successfully to battery degredation data as time series of the
-battery's measured capacity over cycles. HMM is a discrete-time
-statistical model which assigns states to each point in time and
-attempts to calculate the conditional probability of transitioning
-into the next state at each time interval. The critical difference
-between LSTM models and HMMs is the Markov assumption which is made in
-HMMs - that is, when working with a HMM, we assume that the underlying
-hidden process depends only on its current state and not any prior
-states. LSTM models, in contrast, are able to take into account past
-data and use this to make a future prediction. Thus, comparison of
-these two methods will reveal some information about the behavior of
-the processes underlying degredation of lithium-ion batteries.
+battery capacity over cycles.
 
 LSTM is a type of recurrent neural network which relies on specialized
 LSTM neurons.
@@ -63,6 +53,40 @@ LSTM neurons.
 {% include image.html
 url="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/The_LSTM_cell.png/800px-The_LSTM_cell.png"
 description="Source: Wikipedia, Long short-term memory" %}
+
+The LSTM cell comprises an input gate, an output gate, and a forget
+gate, which control the flow of information through the cell. The
+input gate controls how much new information enters the cell, the
+forget gate controls how long information remains in the cell, and the
+output gate controls how much information leaves the cell via an
+activation function. Using an algorithm such as gradient descent and
+backpropagation, the parameters of these gates can be calculated and
+each cell can be tuned to use varying amounts of past data.
+
+HMM is a discrete-time
+statistical model which assigns states to each point in time and
+attempts to calculate the conditional probability of transitioning
+into the next state at each time interval. If $$X$$ is a process
+with unobservable states and $$Y$$ is an observable process whose
+observed states we wish to use to make inferences about $$X$$, then
+the pair $$(X, Y)$$ is a hidden Markov model if for all $$n$$ in our
+time domain we have that
+
+$$P(Y_n \mid X_1 = x_1, \dots, X_n = x_n) = P(Y_n \mid X_n = x_n).$$
+
+In other words, we assume that the process $$X$$ depends only on the
+most recent state and not on any prior states. Typical HMM learning
+methods include various expectation-maximization algorithms employing
+maximum likelihood estimation.
+
+The critical difference
+between LSTM models and HMMs is the Markov assumption which is made in
+HMMs - that is, when working with a HMM, we assume that the underlying
+hidden process depends only on its current state and not any prior
+states. LSTM models, in contrast, are able to take into account past
+data and use this to make a future prediction. Thus, comparison of
+these two methods will reveal some information about the behavior of
+the processes underlying degredation of lithium-ion batteries.
 
 For this study we use a dataset whose testbed comprises several 18650
 sized rechargeable lithium-ion batteries who were run through charge,
