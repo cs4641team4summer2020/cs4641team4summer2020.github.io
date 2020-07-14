@@ -1,5 +1,3 @@
-skjdfaksdfj test
-
 The rapidly increasing use of fossil fuels and its associated
 environmental costs has led to a growing need for efficient methods of
 energy storage. One widespread and readily available energy storage
@@ -9,6 +7,8 @@ lifetime, and relatively low environmental impact. They are commonly
 used in small electronics, including laptop computers, mobile phones,
 and power tools. More recently, as battery technologies have improved,
 they have been employed in electric and hybrid vehicles as well.
+
+$$P(X = x_n)$$
 
 One problem inherent in these batteries is the mechanical strain which
 occurs as lithium ions travel from the cathode to the anode as part of
