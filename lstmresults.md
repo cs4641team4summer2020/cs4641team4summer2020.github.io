@@ -1,4 +1,4 @@
-In the LSTM part of this project, we attempted to create a model that would learn from early capacity measurements (first 60% of cycles) of a single battery (0005) and predict remaining useful life. We developed two LSTM different models to this purpose. 
+In the LSTM part of this project, we attempted to create a model that could learn from early capacity measurements (first 60% of cycles) from a single battery (0005) and effectively predict its remaining useful life. We developed two LSTM different models to this purpose. 
 
 # Prediction of Capacity Reduction over Time with LSTM
 
