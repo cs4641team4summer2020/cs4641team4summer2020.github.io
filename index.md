@@ -8,7 +8,7 @@
 {% include_relative background.md %}
 
 ### Dataset
-For our data, we used NASA's publicly accessible repository of Lithium Ion Aging Datasets [NASA's publicly accessible repository of Lithium Ion Aging Datasets](https://catalog.data.gov/dataset/li-ion-battery-aging-datasets). These data were collected from a testbed at the NASA Ames Prognostics Center of Excellence (PCoE).  A set of four Li-ion batteries were run through 3 different operational profiles (charge, discharge and impedance) at room temperature.
+For our data, we used [NASA's publicly accessible repository of Lithium Ion Aging Datasets](https://catalog.data.gov/dataset/li-ion-battery-aging-datasets). These data were collected from a testbed at the NASA Ames Prognostics Center of Excellence (PCoE).  A set of four Li-ion batteries were run through 3 different operational profiles (charge, discharge and impedance) at room temperature.
 
 Charging was carried out in a constant current (CC) mode at 1.5A until the battery voltage reached 4.2V and then continued in a constant voltage (CV) mode until the charge current dropped to 20mA.
 
