@@ -62,3 +62,6 @@ To do this we wrote [MATLAB scripts](https://cs4641team4summer2020.github.io/mat
 
 Y. Zhang, R. Xiong, H. He and Z. Liu, "A LSTM-RNN method for the lithuim-ion battery remaining useful life prediction," 2017 Prognostics
 and System Health Management Conference (PHM-Harbin), Harbin, 2017, pp. 1-4, doi: 10.1109/PHM.2017.8079316.
+
+## Credits
+The data was cleaned by Luca and Daniel, the HMM model was created by Frank and Angad, and the LSTM model was created by Joel.
