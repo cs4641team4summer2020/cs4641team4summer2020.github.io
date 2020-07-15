@@ -23,9 +23,11 @@ Initially, we looked at the Impedance cycle to see if we could discern any kind 
 
 To clean and prepare the data for consumption by our LSTM and HMM code (written in python), we had to convert the MATLAB data files into csv files.
 
-To do this we wrote MATLAB scripts to traverse the data structures and extract the data we required. We found that most of the data was already pretty clean except for some areas where initial readings were abnormal or non-existent. We removed the ones that were anomalous.
+To do this we wrote [MATLAB scripts](https://cs4641team4summer2020.github.io/matlab) to traverse the data structures and extract the data we required. We found that most of the data was already pretty clean except for some areas where initial readings were abnormal or non-existent. We removed the ones that were anomalous.
 
-[Matlab Code](https://cs4641team4summer2020.github.io/matlab)  
+
+
+###### csv files of batteries (discharge and impedance)
 
 [B0005 discharge](https://cs4641team4summer2020.github.io/datasets/B0005-discharge.csv)  
 [B0005 impedance](https://cs4641team4summer2020.github.io/datasets/B0005-impedance.csv)  
