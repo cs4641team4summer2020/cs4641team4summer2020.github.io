@@ -9,7 +9,8 @@ discharge_count = 0;
 fid = fopen(strcat(battery,'.csv'),'w');
 fid_dis = fopen(strcat(battery,'-discharge.csv'),'w');
 fprintf(fid,"Battery, Cycle_No, Date, Time, Temp, Reading_number, Sense_current_real, Sense_current_i, Battery_current_real, Battery_current_i, Current_ratio_real, Current_ratio_i, Battery_impedance_real, Battery_impedance_i, Rectified_Impedance_real, Rectified_Impedance_i, Re, Rct\n");
-fprintf(fid_dis, "Battery, Cycle_No, Date, Time, Reading_number, Voltage_measured, Current_measured, Temperature_measured, Current_load, Voltage_load, Time_vector,Capacity\n")
+fprintf(fid_dis, "Battery, Cycle_No, Date, Time, Reading_number, Voltage_measured, Current_measured, Temperature_measured, Current_load, Voltage_load, Time_vector,Capacity\n");
+cycle_no = 0;
 for c = cycles
     type = c.type;
     class(type);
@@ -55,4 +56,23 @@ for c = cycles
         charge_count = charge_count + 1;
 
     end
+    if strcmp(type,'discharge')
+        discharge_count = discharge_count + 1;
+        data = c.data;
+        capacity = data.Capacity;
+        pts = size(data.Voltage_measured);
+        for i=1:pts(2)
+            v_m = data.Voltage_measured(1,i);
+            c_m = data.Current_measured(1,i);
+            t_m = data.Temperature_measured(1,i);
+            c_l = data.Current_load(1,i);
+            v_l = data.Voltage_load(1,i);
+            time = data.Time(1,i);
+            fmt = '%s, %d, %04d-%02d-%02d, %02d:%02d:%05.2f, %d, %f, %f, %f, %f, %f, %f, %f\n';
+            fprintf(fid_dis, fmt, battery, cycle_no, year, month, day, hour, min, seconds, i, v_m, c_m, t_m, c_l, v_l, time, capacity);
+        end
+    end
+end
+fclose(fid);
+fclose(fid_dis);
 ```
