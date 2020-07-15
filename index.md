@@ -8,7 +8,7 @@
 {% include_relative background.md %}
 
 ### Dataset
-
+[Matlab Code](https://cs4641team4summer2020.github.io/matlab)
 ## Results
 
 ### LSTM
@@ -23,5 +23,5 @@
 
 ## References
 
-Y. Zhang, R. Xiong, H. He and Z. Liu, "A LSTM-RNN method for the lithuim-ion battery remaining useful life prediction," 2017 Prognostics 
+Y. Zhang, R. Xiong, H. He and Z. Liu, "A LSTM-RNN method for the lithuim-ion battery remaining useful life prediction," 2017 Prognostics
 and System Health Management Conference (PHM-Harbin), Harbin, 2017, pp. 1-4, doi: 10.1109/PHM.2017.8079316.
