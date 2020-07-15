@@ -10,7 +10,7 @@ While this technique was very intuitive and supported by literature, it does not
 
 # Direct Prediction of RUL over Time with LSTM
 
-For this LSTM model, we used past capacity data to directly predict the RUL. We used a technique known as walk-forward validation. We train on all the capacity data up till the "current" cycle (in time steps of 3 cycles), and predict the RUL from the current cycle. Every time we "recieve" new data (move to the next cycle), we retrain on the new data and make a better prediction. Below is a graph of our predicted RUL at each cycle compared to the real value (starting from training on 60% of the cycles). For this model, we found that we benefitted from stacking an extra LSTM layer of 50 nodes and adding dropout layers. Dropout layers randomly remove a fraction (0.2) of the network nodes to prevent overfitting. We trained for 1000 epochs using the RMSProp optimizer. RMSE = 11 cycles
+For this LSTM model, we used past capacity data to directly predict the RUL. We used a technique known as walk-forward validation. We train on all the capacity data up till the "current" cycle (in time steps of 3 cycles), and predict the RUL from the current cycle. Every time we "recieve" new data (move to the next cycle), we retrain on the new data and make a better prediction. Below is a graph of our predicted RUL at each cycle compared to the real value (starting from training on 60% of the cycles). For this model, we found that we benefitted from stacking an extra LSTM layer of 50 nodes and adding dropout layers. Dropout layers randomly remove a fraction (0.2) of the network nodes to prevent overfitting. We trained for 1000 epochs using the RMSProp optimizer and ran it till the failure point (RUL=0). RMSE = 11 cycles
 
 ![LSTM RUL](/images/LSTM2RUL.jpg)
 
@@ -18,7 +18,7 @@ It is interesting to note that the model consistently errs at about +10 above th
 
 ![LSTM Training](/images/LSTMTraining.JPG)
 
-We also created a visualization where we used our predicted RUL at each cycle to calculate a predicted capacity for the consequent cycle as C<sub>i+1</sub> = C<sub>i</sub> - (C<sub>i</sub> - 1.4) / RUL.
+We also created a visualization where we used our predicted RUL at each cycle to calculate a predicted capacity for the consequent cycle as C<sub>i+1</sub> = C<sub>i</sub> - (C<sub>i</sub> - 1.4) / RUL. We ran this till the failure point.
 
 ![LSTM Capacity 2](/images/LSTM2Capacity.JPG)
 
