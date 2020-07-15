@@ -52,6 +52,8 @@ To do this we wrote [MATLAB scripts](https://cs4641team4summer2020.github.io/mat
 
 ### Comparison of models
 
+{% include_relative comparison.md %}
+
 ### Further work
 
 {% include_relative furtherwork.md %}
