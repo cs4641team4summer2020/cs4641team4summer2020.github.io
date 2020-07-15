@@ -83,7 +83,7 @@ In this case of battery failure, we assume the final state is absorbing - that i
 
 $$t = (Q-I)c$$
 
-Here, Q is the square submatrix of the transition matrix of the Markov model that does not include the row or column of the absorbing state, and $c$ is a column vector of all ones. This calculation is used to predict the remaining useful life of a battery. As the model categorizes batteries into the different states in the model, these categorizations can be used to determine the expected number of cycles until absorption, which signifies failure of the battery.
+Here, Q is the square submatrix of the transition matrix of the Markov model that does not include the row or column of the absorbing state, and $$c$$ is a column vector of all ones. This calculation is used to predict the remaining useful life of a battery. As the model categorizes batteries into the different states in the model, these categorizations can be used to determine the expected number of cycles until absorption, which signifies failure of the battery.
 
 The critical difference
 between LSTM models and HMMs is the Markov assumption which is made in
