@@ -14,7 +14,7 @@ It is interesting to note that the model consistently errs at about +10 above th
 
 ![LSTM Training](/images/LSTMTraining.JPG)
 
-We also created a visualization where we used our predicted RUL at each cycle to calculate a predicted capacity for the consequent cycle as $C_{i+1} = C_i - (C_i-1.4)/RUL$.
+We also created a visualization where we used our predicted RUL at each cycle to calculate a predicted capacity for the consequent cycle as C<sub>i+1;</sub> = C<sub>i</sub> - (C<sub>i</sub> - 1.4) / RUL.
 
 ![LSTM Capacity 2](/images/LSTM2Capacity.JPG)
 
