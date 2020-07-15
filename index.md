@@ -42,6 +42,8 @@ To do this we wrote [MATLAB scripts](https://cs4641team4summer2020.github.io/mat
 
 ### LSTM
 
+{% include_relative lstmresults.md %}
+
 ### HMM
 
 {% include_relative hmmresults.md %}
