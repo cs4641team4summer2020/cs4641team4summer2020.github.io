@@ -54,6 +54,8 @@ To do this we wrote [MATLAB scripts](https://cs4641team4summer2020.github.io/mat
 
 ### Further work
 
+{% include_relative furtherwork.md %}
+
 ## References
 
 Y. Zhang, R. Xiong, H. He and Z. Liu, "A LSTM-RNN method for the lithuim-ion battery remaining useful life prediction," 2017 Prognostics
