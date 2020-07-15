@@ -27,7 +27,15 @@ To do this we wrote MATLAB scripts to traverse the data structures and extract t
 
 [Matlab Code](https://cs4641team4summer2020.github.io/matlab)  
 
-[B0005 discharge](https://cs4641team4summer2020.github.io/datasets/B0005-discharge.csv)
+[B0005 discharge](https://cs4641team4summer2020.github.io/datasets/B0005-discharge.csv)  
+[B0005 impedance](https://cs4641team4summer2020.github.io/datasets/B0005-impedance.csv)  
+[B0006 discharge](https://cs4641team4summer2020.github.io/datasets/B0006-discharge.csv)  
+[B0006 impedance](https://cs4641team4summer2020.github.io/datasets/B0006-impedance.csv)  
+[B0007 discharge](https://cs4641team4summer2020.github.io/datasets/B0007-discharge.csv)  
+[B0007 impedance](https://cs4641team4summer2020.github.io/datasets/B0007-impedance.csv)  
+[B0018 discharge](https://cs4641team4summer2020.github.io/datasets/B0018-discharge.csv)  
+[B0018 impedance](https://cs4641team4summer2020.github.io/datasets/B0018-impedance.csv)
+
 ## Results
 
 ### LSTM
