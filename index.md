@@ -44,6 +44,8 @@ To do this we wrote [MATLAB scripts](https://cs4641team4summer2020.github.io/mat
 
 ### HMM
 
+{% include_hmmresults.md %}
+
 ## Conclusion
 
 ### Comparison of models
