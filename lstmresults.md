@@ -14,7 +14,7 @@ For this LSTM model, we used past capacity data to directly predict the RUL. We 
 
 ![LSTM RUL](/images/LSTM2RUL.jpg)
 
-It is interesting to note that the model consistently errs at about +10 above the real RUL. This is probably because the model is overfitting to the minute spikes in the capacity curve and overestimating future capacity. Also, as expected, RUL prediction seems to get better as we get closer to the point of failure. Below we show our RMSE loss over training time.
+It is interesting to note that the model consistently errs at about +10 above the real RUL. This is probably because the model is overfitting to the small spikes in the capacity vs time curve and overestimating future capacity. Also, as expected, RUL prediction seems to get better as we get closer to the point of failure. Below we show our RMSE loss over training time.
 
 ![LSTM Training](/images/LSTMTraining.JPG)
 
