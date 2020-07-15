@@ -25,8 +25,9 @@ To clean and prepare the data for consumption by our LSTM and HMM code (written 
 
 To do this we wrote MATLAB scripts to traverse the data structures and extract the data we required. We found that most of the data was already pretty clean except for some areas where initial readings were abnormal or non-existent. We removed the ones that were anomalous.
 
-[Matlab Code](https://cs4641team4summer2020.github.io/matlab)
-[Datasets](https://cs4641team4summer2020.github.io/datasets)
+[Matlab Code](https://cs4641team4summer2020.github.io/matlab)  
+
+[B0005 discharge](https://cs4641team4summer2020.github.io/datasets/B0005-discharge.csv)
 ## Results
 
 ### LSTM
