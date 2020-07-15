@@ -21,8 +21,8 @@ its capacity (i.e., the amount of charge it can hold) drops below a
 certain threshold value. When this happens, its power output drops and
 becomes unpredictable; this makes the battery much less efficient and
 potentially unsafe to use. There are several methods in practice which
-predict when a battery will fail. The prediction metric on which we
-will focus is remaining useful life (RUL), which is defined at any
+predict when a battery will fail. The prediction metric we
+will use is remaining useful life (RUL), which is defined at any
 time as the estimated number of cycles until the battery's capacity
 drops below the threshold value.
 
