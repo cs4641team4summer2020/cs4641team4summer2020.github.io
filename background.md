@@ -81,7 +81,7 @@ maximum likelihood estimation.
 
 In this case of battery failure, we assume the final state is absorbing - that is, once a battery is observed in this final state, it cannot enter a different state. This means that a battery that has failed cannot "un-fail." This assumption allows the calculation of expected number of charge/discharge cycles until failure. In a Markov model with an absorbing state, the expected number of steps until absorption can be calculated as 
 
-$$t = (\mathbf{Q}-I)\mathbf{c}$$
+$$t = (\mathbf{Q}-I)^{-1}\mathbf{c}$$
 
 Here, $$\mathbf{Q}$$ is the square submatrix of the transition matrix of the Markov model that does not include the row or column of the absorbing state, and $$\mathbf{c}$$ is a column vector of all ones. This calculation is used to predict the remaining useful life of a battery. As the model categorizes batteries into the different states in the model, these categorizations can be used to determine the expected number of cycles until absorption, which signifies failure of the battery.
 
